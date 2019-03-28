@@ -1,14 +1,14 @@
 print("Welcome to 'I don't have dice for D&D!' dice roller!")
 while True:
-    que1=input("what dice are you rolling today?\n")
-    ans1="D4"
-    ans2="D6"
-    ans3="D8"
-    ans4="D10"
-    ans5="D12"
-    ans6="D20"
-    ans7="D100"
-    ans8="End"
+    que1=str(input("what dice are you rolling today?\n")).lower()
+    ans1="d4"
+    ans2="d6"
+    ans3="d8"
+    ans4="d10"
+    ans5="d12"
+    ans6="d20"
+    ans7="d100"
+    ans8="end"
     if ans1==que1:
         import random
         print(random.randint(1, 4))
